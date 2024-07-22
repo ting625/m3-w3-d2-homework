@@ -1,0 +1,63 @@
+.container {
+  background-color: #f7eb80;
+  color: #ffffff;
+  border: 1px solid #000;
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1em;
+  width: 50%;
+}
+.container .left {
+  background-color: #6e7a5b;
+  height: 100%;
+  width: 69%;
+  position: relative;
+}
+.container .right {
+  background-color: #a6ad80;
+  height: 100%;
+  position: relative;
+  width: 29%;
+  text-align: center;
+}
+.container .right .button {
+  background-color: #dcf829;
+  border: 1px solid #dcf829;
+  color: #6e7a5b;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 8em;
+  height: 2.5em;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5em 2em;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+}
+.container nav ul {
+  margin: 37% 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container nav li {
+  display: inline-block;
+  color: #ffffff;
+}
+.container nav a {
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.container .nav_right {
+  margin: 90% 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

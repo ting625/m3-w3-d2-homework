@@ -1,0 +1,77 @@
+// Add styles.scss
+
+@import 'colors.scss';
+
+@mixin button-styles {
+    background-color: $color-green;
+    border: 1px solid $color-green;
+    color: $color-dark-green;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 8em;
+    height: 2.5em;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    border-radius: 10px;
+  }
+
+.container {
+    background-color: $color-yellow;
+    color:$color-white;
+    border: 1px solid #000;
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1em;
+    width: 50%;
+
+    .left {
+        background-color: $color-dark-green;
+        height: 100%;
+        width: 69%;
+        position: relative;
+    }
+
+    .right {
+        background-color: $color-light-green;
+        height: 100%;
+        position: relative;
+        width: 29%;
+        text-align: center;
+
+        .button {
+            @include button-styles;
+
+            //this is to center content vertically
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -120%);
+        }
+    }
+
+    nav ul {
+        margin:37% 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      nav li {
+        display: inline-block;
+        color:$color-white;
+      }
+      nav a {
+        padding: 6px 12px;
+        text-decoration: none;
+        color:$color-white;
+      }
+
+    .nav_right {
+        margin:90% 0;
+    }
+
+}
